@@ -1,0 +1,1 @@
+Unit test cases- Will focus on individual components, ensuring they function correctly in isolation. For instance, we will test character movement, obstacle generation, or score calculation independently to verify their accuracy. This approach helps catch bugs early and facilitates easier debugging, contributing to the overall stability of the game.
