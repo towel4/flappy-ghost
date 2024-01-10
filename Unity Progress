@@ -21,6 +21,8 @@
 - Changed Sprite Renderer of temporary Ground Sprite to Tiled draw mode and changed the size to 3.64 Width 0.56 Height. 
 - Added Box Collider 2D component to temporary Ground Sprite, useful for representing objects with simple rectangular or cubic shapes. Added the Auto Tiling option which enables automatic updates to the shape. 
 
+## Week 2 Unity: 1/9/24 - 1/12/24
+
 - Added 'Scripts' folder to Assets
 - Created C# Script named 'FlyBehaviour'
 - Added 'FlyBehaviour' script to 'Ghost' sprite as a component
