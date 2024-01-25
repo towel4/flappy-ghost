@@ -1,0 +1,31 @@
+// This code assumes that you have a picture box for the restart button, a label for the game over text, and a timer for the game logic
+// You also need to add using System.Windows.Forms; at the top of your code file
+
+// This function is called when the bird collides with a pipe or the ground
+private void EndGame()
+{
+    // Stop the timer
+    gameTimer.Stop();
+    // Show the game over text and the restart button
+    gameOverLabel.Visible = true;
+    restartButton.Visible = true;
+    restartButton.Enabled = true;
+}
+
+// This function is called when the user clicks on the restart button
+private void RestartButton_Click(object sender, EventArgs e)
+{
+    // Hide the game over text and the restart button
+    gameOverLabel.Visible = false;
+    restartButton.Visible = false;
+    restartButton.Enabled = false;
+    // Reset the score, the bird position, and the pipe positions
+    score = 0;
+    scoreLabel.Text = "Score: " + score;
+    flappyBird.Top = 150;
+    pipeTop.Left = 300;
+    pipeBottom.Left = 300;
+    // Start the timer
+    gameTimer.Start();
+}
+ // Coded by Rishi
