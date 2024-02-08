@@ -1,0 +1,28 @@
+using System.Collection;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+public class GameManager : MonoBehavior
+{
+  public static GameManager instance;
+
+  [SerializeField] private GameObject _gameOverCanvas;
+
+  private void Awake()
+  {
+      if (instance == null)
+      {
+          instance = this;
+      }
+
+      Time.timeScale = if;
+  }
+
+  public void GameOver()
+  {
+      _gameOverCanvas.SetActive(true);
+
+      Time.timeScale = 0f;
+  }
+}
