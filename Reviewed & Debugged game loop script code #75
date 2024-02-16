@@ -1,0 +1,41 @@
+1. **Namespace Typo**: The namespace `System.Collection` is incorrect. It should be `System.Collections`.
+
+2. **MonoBehavior Typo**: The class `MonoBehavior` is misspelled. It should be `MonoBehaviour`.
+
+3. **Time.timeScale Assignment**: The line `Time.timeScale = if;` seems to be incorrect due to a typo or a placeholder value (`if`). You likely intended to set `Time.timeScale` to a specific value (e.g., 1f to resume normal time flow). 
+
+4. **Singleton Pattern Enhancement**: In the `Awake` method, when you're setting up the singleton instance, it's a good practice to also ensure that if an instance already exists and it's not `this`, you should destroy the newly created duplicate to avoid having multiple instances of your `GameManager`.
+
+
+
+Revised code:
+
+public class GameManager : MonoBehaviour
+{
+    public static GameManager instance;
+
+    [SerializeField] private GameObject _gameOverCanvas;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            // Optionally, make this object persistent between scene loads
+            // DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject); // Destroy duplicate
+        }
+
+        Time.timeScale = 1f; // Assuming you want the game to run at normal speed at startup
+    }
+
+    public void GameOver()
+    {
+        _gameOverCanvas.SetActive(true);
+
+        Time.timeScale = 0f; // Pause the game
+    }
+}
