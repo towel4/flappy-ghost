@@ -1,0 +1,20 @@
+using UnityEngine;
+
+public class GroundOverlay : MonoBehaviour
+{
+    public Renderer groundRenderer;
+    private float groundWidth;
+
+    void Start()
+    {
+        groundWidth = groundRenderer.bounds.size.x;
+    }
+
+    void Update()
+    {
+        float offset = Time.time;
+        float x = Mathf.Repeat(offset, groundWidth);
+        Vector2 offsetVector = new Vector2(x / groundWidth, 0);
+        groundRenderer.material.SetTextureOffset("_MainTex", offsetVector);
+    }
+}
