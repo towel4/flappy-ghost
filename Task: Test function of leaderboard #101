@@ -1,0 +1,21 @@
+Supports Story: #100
+
+    Empty Leaderboard:
+        Verify that when the game is launched for the first time, the leaderboard is empty.
+
+    Score Submission:
+        Play the game and achieve a score.
+        Verify that the score is correctly submitted to the leaderboard.
+
+    Maximum Score Display:
+        Achieve the maximum possible score in the game.
+        Verify that the maximum score is displayed at the top of the leaderboard.
+
+    Minimum Score Display:
+        Submit a score of zero or the lowest possible score.
+        Verify that the minimum score is displayed correctly on the leaderboard.
+
+    Multiple Score Submission:
+        Play the game multiple times and achieve different scores.
+        Verify that all scores are accurately displayed on the leaderboard in descending order.
+
