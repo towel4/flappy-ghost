@@ -1,0 +1,41 @@
+using UnityEngine;
+// Unity & w3schools code
+// assisted by Ismail
+
+public class MedalSystem : MonoBehaviour
+{
+    public int bronzeThreshold = 25;
+    public int silverThreshold = 50;
+    public int goldThreshold = 100;
+
+    public GameObject bronzeMedalPrefab;
+    public GameObject silverMedalPrefab;
+    public GameObject goldMedalPrefab;
+
+    private bool hasBronzeMedal = false;
+    private bool hasSilverMedal = false;
+    private bool hasGoldMedal = false;
+
+    private int score = 0;
+
+    public void IncrementScore()
+    {
+        score++;
+
+        if (score == bronzeThreshold && !hasBronzeMedal)
+        {
+            Instantiate(bronzeMedalPrefab, transform.position, Quaternion.identity);
+            hasBronzeMedal = true;
+        }
+        else if (score == silverThreshold && !hasSilverMedal)
+        {
+            Instantiate(silverMedalPrefab, transform.position, Quaternion.identity);
+            hasSilverMedal = true;
+        }
+        else if (score == goldThreshold && !hasGoldMedal)
+        {
+            Instantiate(goldMedalPrefab, transform.position, Quaternion.identity);
+            hasGoldMedal = true;
+        }
+    }
+}
