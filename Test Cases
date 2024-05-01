@@ -1,41 +1,38 @@
+Certainly, here are the refined test cases with only one test step each:
+
 Test Case 1: TC001 - Player Movement
 
-	•	Test Case Description: Verify that the player can control the character’s movement smoothly.
-	•	Test Steps:
-	1.	Open the game and start a run.
-	2.	Swipe left, right, up, and down to change the character’s direction.
-	•	Expected Results: The character responds accurately to swipes, moving left, right, up, and down as expected.
-	•	Actual Results (to be filled during testing):
-	•	Pass/Fail (to be filled during testing):
+- **Test Case Description:** Verify that the player can control the character’s movement smoothly.
+- **Test Steps:**
+  1. Open the game and start a run. Swipe left, right, up, and down to change the character’s direction.
+- **Expected Results:** The character responds accurately to swipes, moving left, right, up, and down as expected.
+- **Actual Results (to be filled during testing):**
+- **Pass/Fail (to be filled during testing):**
 
 Test Case 2: TC002 - Collecting Power-Ups
 
-	•	Test Case Description: Confirm that the player can collect power-ups during gameplay.
-	•	Test Steps:
-	1.	Start a run and locate a power-up.
-	2.	Direct the character to collect the power-up.
-	•	Expected Results: The character collects the power-up, and its effects are visible during the run.
-	•	Actual Results (to be filled during testing):
-	•	Pass/Fail (to be filled during testing):
+- **Test Case Description:** Confirm that the player can collect power-ups during gameplay.
+- **Test Steps:**
+  1. Start a run and locate a power-up. Direct the character to collect the power-up.
+- **Expected Results:** The character collects the power-up, and its effects are visible during the run.
+- **Actual Results (to be filled during testing):**
+- **Pass/Fail (to be filled during testing):**
 
 Test Case 3: TC003 - Obstacle Avoidance
 
-	•	Test Case Description: Ensure the character can successfully navigate and avoid obstacles.
-	•	Test Steps:
-	1.	Begin a run and encounter various obstacles.
-	2.	Swipe or tilt the device to avoid obstacles.
-	•	Expected Results: The character successfully avoids obstacles, and collisions are appropriately handled.
-	•	Actual Results (to be filled during testing):
-	•	Pass/Fail (to be filled during testing):
+- **Test Case Description:** Ensure the character can successfully navigate and avoid obstacles.
+- **Test Steps:**
+  1. Begin a run and encounter various obstacles. Swipe or tilt the device to avoid obstacles.
+- **Expected Results:** The character successfully avoids obstacles, and collisions are appropriately handled.
+- **Actual Results (to be filled during testing):**
+- **Pass/Fail (to be filled during testing):**
 
 Test Case 4: TC004 - Score Tracking
 
-	•	Test Case Description: Verify that the game accurately tracks and displays the player’s score.
-	•	Test Steps:
-	1.	Play through a run and collect points.
-	2.	Complete the run and view the final score.
-	•	Expected Results: The displayed score matches the points collected during the run.
-	•	Actual Results (to be filled during testing):
-	•	Pass/Fail (to be filled during testing):
-
+- **Test Case Description:** Verify that the game accurately tracks and displays the player’s score.
+- **Test Steps:**
+  1. Play through a run and collect points. Complete the run and view the final score.
+- **Expected Results:** The displayed score matches the points collected during the run.
+- **Actual Results (to be filled during testing):**
+- **Pass/Fail (to be filled during testing):**
 These test cases cover essential functionalities in a mobile game. including player movement, power-up collection, obstacle avoidance, and score tracking.
